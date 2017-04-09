@@ -5,7 +5,7 @@
 {
     'name': 'Colombian Bank Data',
     'version': '10.0.1.0.0',
-    'author': 'DevCO Colombia SAS',
+    'author': 'DevCO',
     'maintainer': 'DevCO Colombia',
     'website': 'http://devco.co',
     'license': 'LGPL-3',
