@@ -20,3 +20,10 @@ class CRMLead(models.Model):
     @api.multi
     def write(self, vals):
         return super(CRMLead, self).write(self._complete_address(vals))
+
+    @api.multi
+    def _create_lead_partner_data(self, name, is_company, parent_id=False):
+        # Depends on https://github.com/odoo/odoo/pull/16493
+        vals = super(CRMLead, self)._create_lead_partner_data(name, is_company, parent_id=parent_id)
+        vals['city_id'] = self.city_id.id
+        return vals
