@@ -19,7 +19,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:l10n_co_geo.action_city
 #: model:ir.ui.menu,name:l10n_co_geo.menu_city_partner
 msgid "Cities"
-msgstr ""
+msgstr "Ciudades"
 
 #. module: l10n_co_geo
 #: model:ir.model,name:l10n_co_geo.model_res_country_state_city
@@ -35,54 +35,54 @@ msgstr ""
 #: model:ir.ui.view,arch_db:l10n_co_geo.view_res_country_state_city_form
 #: model:ir.ui.view,arch_db:l10n_co_geo.view_res_country_state_city_tree
 msgid "City"
-msgstr ""
+msgstr "Ciduad"
 
 #. module: l10n_co_geo
 #: model:ir.model.fields,field_description:l10n_co_geo.field_res_country_code_dian
 msgid "Code Dian"
-msgstr ""
+msgstr "Código DIAN"
 
 #. module: l10n_co_geo
 #: model:ir.model.fields,help:l10n_co_geo.field_res_country_state_city_statcode
 msgid "Code of the Colombian statistical department"
-msgstr ""
+msgstr "Código DANE"
 
 #. module: l10n_co_geo
 #: model:ir.model,name:l10n_co_geo.model_res_company
 msgid "Companies"
-msgstr ""
+msgstr "Compañías"
 
 #. module: l10n_co_geo
 #: model:ir.model,name:l10n_co_geo.model_res_country
 #: model:ir.model.fields,field_description:l10n_co_geo.field_res_country_state_city_country_id
 msgid "Country"
-msgstr ""
+msgstr "País"
 
 #. module: l10n_co_geo
 #: model:ir.model,name:l10n_co_geo.model_res_country_state
 msgid "Country state"
-msgstr ""
+msgstr "Departamento"
 
 #. module: l10n_co_geo
 #: model:ir.model.fields,field_description:l10n_co_geo.field_res_country_state_city_create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: l10n_co_geo
 #: model:ir.model.fields,field_description:l10n_co_geo.field_res_country_state_city_create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: l10n_co_geo
 #: model:ir.model.fields,field_description:l10n_co_geo.field_res_country_state_city_statcode
 msgid "DANE Code"
-msgstr ""
+msgstr "Código DANE"
 
 #. module: l10n_co_geo
 #: model:ir.model.fields,field_description:l10n_co_geo.field_partner_city_abstract_display_name
 #: model:ir.model.fields,field_description:l10n_co_geo.field_res_country_state_city_display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: l10n_co_geo
 #: model:ir.model.fields,field_description:l10n_co_geo.field_partner_city_abstract_id
@@ -94,42 +94,42 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_co_geo.field_partner_city_abstract___last_update
 #: model:ir.model.fields,field_description:l10n_co_geo.field_res_country_state_city___last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Última modificacion el"
 
 #. module: l10n_co_geo
 #: model:ir.model.fields,field_description:l10n_co_geo.field_res_country_state_city_write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: l10n_co_geo
 #: model:ir.model.fields,field_description:l10n_co_geo.field_res_country_state_city_write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: l10n_co_geo
 #: model:ir.model,name:l10n_co_geo.model_res_partner
 msgid "Partner"
-msgstr ""
+msgstr "Tercero"
 
 #. module: l10n_co_geo
 #: model:ir.model.fields,field_description:l10n_co_geo.field_res_country_state_city_state_id
 #: model:ir.ui.view,arch_db:l10n_co_geo.view_partner_filter_inherit_city
 msgid "State"
-msgstr ""
+msgstr "Departamento"
 
 #. module: l10n_co_geo
 #: code:addons/l10n_co_geo/models/res_country.py:37
 #: sql_constraint:res.country.state.city:0
 #, python-format
 msgid "The city you are trying to create already exists."
-msgstr ""
+msgstr "La ciudad que esta intentando crear ya existe."
 
 #. module: l10n_co_geo
 #: code:addons/l10n_co_geo/models/res_country.py:21
 #: sql_constraint:res.country.state:0
 #, python-format
 msgid "The state you are trying to create already exists."
-msgstr ""
+msgstr "El departamento que esta intentando crear ya existe."
 
 #. module: l10n_co_geo
 #: model:ir.model.fields,field_description:l10n_co_geo.field_res_country_state_iso
