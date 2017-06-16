@@ -9,18 +9,6 @@ class CRMLead(models.Model):
     _name = 'crm.lead'
     _inherit = ['crm.lead', 'partner.city.abstract']
 
-    @api.model
-    def _address_fields(self):
-        return super(CRMLead, self)._address_fields() + ['city_id']
-
-    @api.model
-    def create(self, vals):
-        return super(CRMLead, self).create(self._complete_address(vals))
-
-    @api.multi
-    def write(self, vals):
-        return super(CRMLead, self).write(self._complete_address(vals))
-
     @api.multi
     def _create_lead_partner_data(self, name, is_company, parent_id=False):
         # Depends on https://github.com/odoo/odoo/pull/16493

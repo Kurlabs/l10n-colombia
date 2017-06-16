@@ -18,38 +18,13 @@ class PartnerCityAbstract(models.AbstractModel):
             self.country_id = self.city_id.country_id
 
     @api.onchange('state_id')
-    def _onchange_state(self):
-        if self.state_id:
-            if self.city_id.state_id != self.state_id:
-                self.city_id = False
-            self.country_id = self.state_id.country_id
+    def _onchange_state_city(self):
+        if self.city_id.state_id != self.state_id:
+            self.city_id = False
 
     @api.onchange('country_id')
     def _onchange_country(self):
-        if self.country_id:
-            if self.city_id.country_id != self.country_id:
-                self.city_id = False
-            if self.state_id.country_id != self.country_id:
-                self.state_id = False
-
-    def _complete_address(self, vals):
-
-        def set_to_zero(vals, field):
-            return field in vals and not vals.get(field)
-        if vals.get('city_id'):
-            vals['state_id'] = self.env[
-                'res.country.state.city'
-            ].browse(vals.get('city_id')).state_id.id
-        if len(self) == 1:
-            if set_to_zero(vals, 'state_id') and self.city_id:
-                vals['state_id'] = self.city_id.state_id.id
-        if vals.get('state_id'):
-            vals['country_id'] = self.env[
-                'res.country.state'
-            ].browse(vals.get('state_id')).country_id.id
-        if len(self) == 1:
-            if set_to_zero(vals, 'country_id') and \
-                    self.city_id or self.state_id:
-                country_rel = self.city_id or self.state_id
-                vals['country_id'] = country_rel.country_id.id
-        return vals
+        if self.city_id.country_id != self.country_id:
+            self.city_id = False
+        if self.state_id.country_id != self.country_id:
+            self.state_id = False

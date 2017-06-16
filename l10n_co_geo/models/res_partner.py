@@ -12,11 +12,3 @@ class ResPartner(models.Model):
     @api.model
     def _address_fields(self):
         return super(ResPartner, self)._address_fields() + ['city_id']
-
-    @api.model
-    def create(self, vals):
-        return super(ResPartner, self).create(self._complete_address(vals))
-
-    @api.multi
-    def write(self, vals):
-        return super(ResPartner, self).write(self._complete_address(vals))
