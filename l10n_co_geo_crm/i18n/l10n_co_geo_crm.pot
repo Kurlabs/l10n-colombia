@@ -19,10 +19,10 @@ msgstr ""
 #: model:ir.ui.view,arch_db:l10n_co_geo_crm.view_crm_case_form_view_leads_geo
 #: model:ir.ui.view,arch_db:l10n_co_geo_crm.view_crm_case_form_view_oppor_geo
 msgid "City"
-msgstr "Ciudad"
+msgstr ""
 
 #. module: l10n_co_geo_crm
 #: model:ir.model,name:l10n_co_geo_crm.model_crm_lead
 msgid "Lead/Opportunity"
-msgstr "Iniciativa/Oportunidad"
+msgstr ""
 
