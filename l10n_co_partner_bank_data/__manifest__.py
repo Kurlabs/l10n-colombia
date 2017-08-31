@@ -11,7 +11,7 @@
     'license': 'LGPL-3',
     'category': 'Localization',
     'summary': 'Selected entities with colombian banking license.',
-    'depends': ['base'],
+    'depends': ['base', 'l10n_co'],
     'data': ['data/res_bank.xml'],
     'auto_install': True,
 }
